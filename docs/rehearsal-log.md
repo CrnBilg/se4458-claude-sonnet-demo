@@ -4,7 +4,7 @@ Fill in after every run. This is also our evidence for the slide "what we observ
 
 | Date | Who | Account (1 or 2) | Demo | Duration | Result | Problems / fixes | Recorded? |
 |---|---|---|---|---|---|---|---|
-| | | | A | | | | |
+| 2026-11-16 | Yasmin | - | A | ~7 min 7 sec | Sonnet 5.5. 10/10 tests passed. Swagger verified 200, 201, 400, 404 and 204. GET /todos/1 returned 404 after deletion. | One Claude run. The initial test command failed on Node 24. Changed the test script to use a glob and reran successfully. | Screenshots |
 | | | | B | | | | |
 
 ## Environment checks

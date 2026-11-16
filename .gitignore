@@ -13,6 +13,7 @@ dist/
 *.db
 *.sqlite
 data/
+app/data/
 
 # Backup recordings are large; keep them on the laptop and a USB stick, not in Git
 backup/*.mp4
