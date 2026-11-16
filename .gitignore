@@ -1,0 +1,27 @@
+# Secrets (public repo: never commit these)
+.env
+.env.*
+*.key
+*.pem
+.claude/settings.local.json
+
+# Dependencies and build output
+node_modules/
+dist/
+
+# Local databases created while running the demos
+*.db
+*.sqlite
+data/
+
+# Backup recordings are large; keep them on the laptop and a USB stick, not in Git
+backup/*.mp4
+backup/*.mkv
+backup/*.mov
+backup/*.webm
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
