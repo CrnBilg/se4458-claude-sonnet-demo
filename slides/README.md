@@ -14,12 +14,12 @@ Assumption: about 15 minutes in total (to be confirmed; see `demo-script.md`). A
 | 4 | Model family and benchmarks | Yasmin | official numbers only, mark "vendor-reported" |
 | 5 | Architecture: model → agent loop (Claude Code) → tools | Ceren | diagram |
 | 6 | Services: Claude Code, API/Agent SDK, tool use | Yasmin | API code shown as snippet, **not run** |
-| 7 | MCP in one slide: JSON-RPC, stdio, not REST | Ceren | ties to API Design lecture |
-| 8 | Demo architecture diagram | Ceren | |
-| 9 | Demo A (live) | Ceren/Yasmin | |
-| 10 | Demo B (live, short) | Ceren | |
-| 11 | Evidence: test output, diff, checklist result | both | from rehearsal log |
-| 12 | Pros, cons, risks (limits, wrong answers, prompt injection) | both | |
+| 7 | How we verify generated code: tests, diff, checklists | Ceren | ties to API Design lecture (testing, Swagger/OpenAPI) |
+| 8 | Demo architecture: repo, `app/`, branches, what runs where | Ceren | diagram |
+| 9 | Demo A (live): build from a short spec | Ceren/Yasmin | |
+| 10 | Demo B (live): change request on existing code | Yasmin/Ceren | |
+| 11 | Evidence: test output, diff, checklist results | both | from rehearsal log |
+| 12 | Pros, cons, risks (limits, wrong code, unrequested changes, prompt injection) | both | |
 | 13 | Short comparison with alternatives | Yasmin | sources required |
 | 14 | Conclusion, references, GitHub link | both | |
 

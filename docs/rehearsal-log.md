@@ -2,7 +2,7 @@
 
 Fill in after every run. This is also our evidence for the slide "what we observed".
 
-| Date | Who | Account (Ceren/Barış Pro or Yasmin Pro) | Demo | Duration | Result | Problems / fixes | Recorded? |
+| Date | Who | Account (1 or 2) | Demo | Duration | Result | Problems / fixes | Recorded? |
 |---|---|---|---|---|---|---|---|
 | | | | A | | | | |
 | | | | B | | | | |
@@ -12,11 +12,11 @@ Fill in after every run. This is also our evidence for the slide "what we observ
 | Check | Ceren laptop | Yasmin laptop |
 |---|---|---|
 | `node -v` ≥ 22.18 | | |
-| `npm.cmd install` works in apiNode fork (native SQLite) | | |
-| `npm.cmd test` works in mcp fork | | |
+| `git --version` works | | |
 | `/status` shows Pro login, no API key | | |
 | `$env:ANTHROPIC_API_KEY` is empty | | |
-| `claude mcp list` shows `todo-docs` connected | | |
+| Repo cloned, on `main`, can push | | |
+| `npm install` works in `app/` after Demo A | | |
 
 ## Usage limit notes
 
