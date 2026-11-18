@@ -20,6 +20,7 @@ Resource: todos with id, title, completed (boolean) and createdAt.
 Endpoints: GET /todos (optional ?completed=true|false), GET /todos/:id, POST /todos, PUT /todos/:id, DELETE /todos/:id.
 Validate input and return proper status codes (201, 400, 404) with a clear error message.
 Serve Swagger UI at /api-docs from an openapi.json that matches the real endpoints.
+Separate the code into app/server.js for Express routes, HTTP responses, Swagger and startup; app/todoService.js for validation, filtering and Todo operations; and app/todoRepository.js for JSON file reading and writing.
 Add tests with Node's built-in test runner (node:test) that use a temporary data file, and make "npm test" run them. Add "npm start" to run the server on port 3000.
 First tell me your plan in a few bullets. Then build it, run the tests and the server yourself, fix any failure you cause, and finish with a short summary. Do not add features I did not ask for.
 ```
@@ -31,6 +32,7 @@ First tell me your plan in a few bullets. Then build it, run the tests and the s
 - [ ] `POST /todos` with a title returns 201; without a title returns 400 with a clear message
 - [ ] `GET /todos/999` returns 404
 - [ ] `/api-docs` shows Swagger UI and the documented endpoints match the real ones
+- [ ] Routes in `app/server.js` call `app/todoService.js`, and the service uses `app/todoRepository.js` for file access (check the `require` lines and that routes do no file I/O)
 - [ ] `app/data/` is git-ignored
 - [ ] No unrequested features or extra dependencies (check `package.json` and `git diff --stat`)
 
