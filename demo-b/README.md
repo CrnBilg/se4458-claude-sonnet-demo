@@ -35,7 +35,7 @@ First read the code and tell me your plan in a few bullets, then implement, run 
 - [x] `GET /todos?priority=high&completed=false` filters correctly
 - [x] Swagger (`/api-docs`) shows the new parameters and field
 - [x] `app/README.md` routes match the code
-- [ ] `git diff --stat` was read by a human; only expected files changed
+- [x] `git diff --stat` was read by a human; only expected files changed
 
 ## Why this connects to the course
 
