@@ -28,13 +28,13 @@ First read the code and tell me your plan in a few bullets, then implement, run 
 
 ## Acceptance checklist
 
-- [ ] `npm test` passes, including the old-format record test
-- [ ] `GET /todos?page=2&limit=2` returns the right slice and `X-Total-Count`
-- [ ] `GET /todos?limit=1000` returns 400 with a clear message
-- [ ] Creating with `priority: "high"` works; an invalid priority returns 400
-- [ ] `GET /todos?priority=high&completed=false` filters correctly
-- [ ] Swagger (`/api-docs`) shows the new parameters and field
-- [ ] `app/README.md` routes match the code
+- [x] `npm test` passes, including the old-format record test
+- [x] `GET /todos?page=2&limit=2` returns the right slice and `X-Total-Count`
+- [x] `GET /todos?limit=1000` returns 400 with a clear message
+- [x] Creating with `priority: "high"` works; an invalid priority returns 400
+- [x] `GET /todos?priority=high&completed=false` filters correctly
+- [x] Swagger (`/api-docs`) shows the new parameters and field
+- [x] `app/README.md` routes match the code
 - [ ] `git diff --stat` was read by a human; only expected files changed
 
 ## Why this connects to the course
