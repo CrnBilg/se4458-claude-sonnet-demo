@@ -26,12 +26,12 @@ First tell me your plan in a few bullets. Then build it, run the tests and the s
 
 ## Acceptance checklist (we verify it ourselves, we do not just trust the summary)
 
-- [ ] `npm test` passes (screenshot of the output)
-- [ ] `npm start` runs and `GET http://localhost:3000/todos` returns `[]`
-- [ ] `POST /todos` with a title returns 201; without a title returns 400 with a clear message
-- [ ] `GET /todos/999` returns 404
-- [ ] `/api-docs` shows Swagger UI and the documented endpoints match the real ones
-- [ ] `app/data/` is git-ignored
+- [x] `npm test` passes (screenshot of the output)
+- [x] `npm start` runs and `GET http://localhost:3000/todos` returns `[]`
+- [x] `POST /todos` with a title returns 201; without a title returns 400 with a clear message
+- [x] `GET /todos/999` returns 404
+- [x] `/api-docs` shows Swagger UI and the documented endpoints match the real ones
+- [x] `app/data/` is git-ignored
 - [ ] No unrequested features or extra dependencies (check `package.json` and `git diff --stat`)
 
 ## Notes
