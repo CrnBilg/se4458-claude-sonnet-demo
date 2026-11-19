@@ -11,11 +11,33 @@ If the real time is different, shorten Demo B first, then Demo A.
 - [ ] Claude Code `/status`: login source is the Pro account. **Hide the e-mail on screen before projecting.**
 - [ ] PowerShell: `$env:ANTHROPIC_API_KEY` prints nothing
 - [ ] Usage: no limit warning in the last session; if you are close to the limit, **use the recording**
-- [ ] Repo on `main`, clean (`git status`); the `app/` folder does not exist yet (or is empty) for Demo A
-- [ ] Branch `demo-a-live` created for Demo A; for Demo B a prepared branch `demo-b-live` created from the finished Demo A result
+- [ ] Demo A: you are on `demo-a-live` (see "Branch rules" below), `git status` is clean and the `app/` folder does **not** exist
+- [ ] Demo B: branch `demo-b-live` is checked out and `cd app && npm install` has been run once (`npm test` shows 10 passing before the demo)
 - [ ] Backup videos open and play (both clips), copy on the laptop and on a USB stick
 - [ ] Slides open in presentation mode, GitHub link visible on slide 1
 - [ ] This file open on the second screen or printed
+
+## Branch rules (which branch for which demo)
+
+`main` now contains Yasmin's finished Demo A code in `app/` (merged with PR #1 on 19 Nov). Demo A must start from an empty repo, so **do not start Demo A from `main`.**
+
+| Branch | What it is | Use |
+|---|---|---|
+| `main` | Documents plus the finished Demo A code | Reading, README, GitHub link on slide 1. Do **not** run Demo A here. |
+| `demo-a-live` | Created from commit `4e0b2c7` (the last `main` commit without `app/`) | **Live Demo A.** Claude builds `app/` from scratch. |
+| `demo-a` | Yasmin's rehearsal result (same code as in `main`) | Evidence for the rehearsal log; reference only. |
+| `demo-b-live` | Finished Demo A code plus the Demo B change (pagination, priority) | Demo B. Checked out ready, or replay the prompt from `demo-b/README.md` on a branch created from `demo-a`. |
+
+Create `demo-a-live` once on the presenting laptop and recreate it before each rehearsal (it must have no `app/`):
+
+```powershell
+git checkout main
+git branch -D demo-a-live        # only if it exists from an earlier rehearsal
+git checkout -b demo-a-live 4e0b2c7
+git status                        # clean, and the app/ folder must not exist
+```
+
+Never push `demo-a-live`. After a rehearsal, switch back with `git checkout main`; the new `app/` stays on `demo-a-live` only.
 
 ## 1. Demo A (about 5 minutes): build from a short spec
 
