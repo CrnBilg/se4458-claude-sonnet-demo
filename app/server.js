@@ -15,7 +15,10 @@ function createApp(dataFile = process.env.DATA_FILE || DEFAULT_DATA_FILE) {
   app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openapi));
 
   app.get('/todos', (req, res) => {
-    res.json(service.list({ completed: req.query.completed }));
+    const { completed, priority, page, limit } = req.query;
+    const { items, total } = service.list({ completed, priority, page, limit });
+    res.set('X-Total-Count', String(total));
+    res.json(items);
   });
 
   app.get('/todos/:id', (req, res) => {
