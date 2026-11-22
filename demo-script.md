@@ -50,7 +50,7 @@ Slide 9 is on screen. Switch to the terminal in the repo folder.
 5. Verify yourself (do not trust the summary): `npm test`, `npm start`, one `POST /todos` with and without a title, open `/api-docs`.
 6. Show `git diff --stat` / the file list and say: "A human reviews this. The model is a fast assistant, the checks are ours."
 
-If it is slow or stuck for more than 30–40 seconds, or a limit message appears: **switch to the recording** (section 3).
+The real run time varies between about one and seven minutes (Yasmin's rehearsal took about 7 min 7 sec, Ceren's on 22 Nov about 1 min 4 sec by Claude's own timer). If Claude is fast, we stay live. If it is stuck for more than 30–40 seconds, or a limit message appears: **switch to the recording** (section 3) and say out loud that it is a recording.
 
 ## 2. Demo B (about 3 minutes): change request on existing code
 

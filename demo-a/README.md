@@ -38,6 +38,6 @@ First tell me your plan in a few bullets. Then build it, run the tests and the s
 
 ## Notes
 
-- If the run is long, show the plan and the first files live, then continue with the prepared recording for the test and Swagger part and say so out loud.
+- The run time varies between about one and seven minutes (Yasmin's rehearsal about 7 min 7 sec, Ceren's on 22 Nov about 1 min 4 sec by Claude's own timer). If Claude is fast, we stay live. If it is stuck for more than 30 to 40 seconds, show the plan and the first files live, then continue with the prepared recording for the test and Swagger part and say out loud that it is a recording.
 - When Demo A is finished and checked, commit it on `demo-a` and push, so Demo B can start from the same code.
 - Record every rehearsal in `docs/rehearsal-log.md` (tries, duration, problems).
